@@ -1,9 +1,27 @@
-<h1>The Rebellion</h1>
+<div class="row text-center">
+  <h1>The Rebellion</h1>
+</div>
 
-<h3>Signup for the mailing list!</h3>
+<div class="row text-center">
+  <h3>Signup for the mailing list!</h3>
+</div>
 
-<form class="" action="/people" method="post">
-  <input type="text" name="person[name]" placeholder="Name?">
-  <input type="text" name="person[email]" placeholder="Email?">
-  <input type="submit">
-</form>
+<div class="form-group text-center">
+  <div class="row">
+    <form class="create-follower" action="/" method="post">
+      <div class="col-sm-4 col-sm-offset-2">
+        <input type="text" class="form-control" id="followerName" name="follower[name]" placeholder="Name?">
+      </div>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="followerEmail" name="follower[email]" placeholder="Email?">
+      </div>
+    </div><div class="row">
+      <input type="submit" id="createFollower" class="btn btn-default" disabled>
+    </form>
+  </div>
+</div>
+
+
+<div id="followers-list">
+
+</div>

@@ -3,8 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Music Signup</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js" charset="utf-8"></script>
+    <script src="/js/scripts.js" charset="utf-8"></script>
+
+
+    <script type="text/template" id="follower-template">
+      <div class="row">
+        <div class="info">
+          <span class="valign col-sm-4 col-sm-offset-3"><%%= name %>: <%%= email %></span>
+          <button type="button" name="button" class="valign btn btn-warning remove col-sm-2">remove</button>
+        </div>
+      </div>
+    </script>
   </head>
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.serializeJSON/2.6.1/jquery.serializejson.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js" charset="utf-8"></script>
+  <script src="/js/follower.js" charset="utf-8"></script>
+
 </html>

@@ -1,2 +1,15 @@
-require './app'
-run Sinatra::Application
+# Config
+require 'bundler'
+Bundler.require()
+
+# Models
+require './models/follower'
+
+# Controllers
+require './controllers/application_controller'
+require './controllers/followers_controller'
+require './controllers/api/followers_api_controller'
+
+# Routes
+map('/'){ run FollowersController }
+map('/api/followers'){ run FollowersApiController }
