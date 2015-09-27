@@ -8,11 +8,33 @@ body {
 }
 
 h1 {
-  font-size: 5em;
-  border: 2px solid black;
-  background-color: rgba(255, 125, 0, 0.9);
+  font-size: 3.8em;
+  font-family: 'Rock Salt', cursive;
+  color: #eee;
+  border: 2px solid #eee;
+  width: 350px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.75);;
+  padding: 40px 20px;
   margin: auto;
-  padding: 15px;
+}
+
+@media screen and (min-device-width: 400px) {
+  h1 {
+    width: 400px;
+  }
+}
+
+#followers-list {
+  height: 215px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+@media screen and (max-device-width: 400px) {
+  #followers-list {
+    height: 220px;
+  }
 }
 
 .row {
@@ -30,9 +52,49 @@ div.info {
 
 span {
   color: white;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 span.valign {
   overflow: scroll;
+}
+
+.col-xs-12 {
+  text-align: center;
+}
+
+input[type="text"], input[type="submit"], button.remove {
+  border: 1px solid #97A1AD;
+  border-radius: 20px;
+  border-color: #97A1AD;
+  display: inline-block;
+  padding: 2px 6px;
+  margin: 2px;
+  text-align: center;
+}
+
+input[type="submit"], button.remove {
+  background-color: white;
+  /*font-size: 0.75em !important;*/
+  color: gray;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
 }

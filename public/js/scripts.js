@@ -1,5 +1,3 @@
-console.log('scripts loaded...');
-
 $(document).ready(function(){
   bindNameValidation();
   bindEmailValidation();
@@ -8,12 +6,11 @@ $(document).ready(function(){
 
 function bindEmailValidation() {
   $('#followerEmail').keyup(function(){
-    console.log('keyup follower name');
     var email = $(this).val();
     if (validateEmail(email)) {
-      $(this).css({border: '2px solid rgb(0,210,0)'});
+      $(this).css({border: '1px solid rgb(51,255,51)'});
     } else {
-      $(this).css({border: '2px solid rgb(255,0,0)'});
+      $(this).css({border: '1px solid rgb(255,0,0)'});
     }
     checkSubmit();
   })
@@ -23,9 +20,9 @@ function bindNameValidation() {
   $('#followerName').keyup(function(){
     var name = $(this).val();
     if (name.length > 0) {
-      $(this).css({border: '2px solid rgb(0,210,0)'});
+      $(this).css({border: '1px solid rgb(51,255,51)'});
     } else {
-      $(this).css({border: '2px solid rgb(255,0,0)'});
+      $(this).css({border: '1px solid rgb(255,0,0)'});
     }
     checkSubmit();
   })

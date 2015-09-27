@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Rebellion's Mailing List powered by MailingList.io</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css" media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js" charset="utf-8"></script>
     <script src="/js/scripts.js" charset="utf-8"></script>
 
 
     <script type="text/template" id="follower-template">
-      <div class="row info">
-        <div class="">
-          <span class="valign col-sm-4 col-sm-offset-2 pull-left"><%%= name %>: <%%= email %></span>
-          <div class="col-sm-4 col-md-3 pull-right">
-            <button type="button" name="button" class="btn btn-warning remove">Remove</button>
-          </div>
-        </div>
+      <div class="row">
+        <span class="col-xs-12 col-sm-2 col-sm-offset-2"><%%= name %></span>
+        <span class="col-xs-12 col-sm-4"><%%= email %></span>
+        <span class="col-xs-12 col-sm-2"><button type="button" name="button" class="remove">Remove</button></span>
       </div>
     </script>
   </head>

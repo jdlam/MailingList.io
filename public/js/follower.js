@@ -1,5 +1,3 @@
-console.log('follower.js loaded')
-
 // Model
 var Follower = Backbone.Model.extend({});
 

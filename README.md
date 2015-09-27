@@ -5,7 +5,9 @@ Then this is the app for you!
 
 MailingList.io is made for you to easily create and maintain your followers.
 
-![MailingList.io](http://i.imgur.com/BHZ8gW8.png)
+![MailingList.io](http://i.imgur.com/0kREFm1.png)
+
+![MailingList.io is mobile friendly](http://i.imgur.com/8BUqLDK.png)
 
 Through backbone and our local api, any followers added are instantly updated on the screen.
 
