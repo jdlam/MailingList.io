@@ -16,4 +16,4 @@ map('/api/followers'){ run FollowersApiController }
 
 require 'active_record'
 
-ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
+ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'postgres://localhost/musician_mailing_app_db')
