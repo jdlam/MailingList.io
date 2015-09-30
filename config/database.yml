@@ -5,3 +5,7 @@ development:
 test:
   adapter: postgresql
   database: musician_mailing_app_db
+
+production:
+  adapter: postgresql
+  database: musician_mailing_app_db
