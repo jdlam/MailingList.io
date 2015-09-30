@@ -1,4 +1,4 @@
-# MailingList.io
+# [MailingList.io](https://mailinglist-io.herokuapp.com/)
 
 Managing a mailing list? Need to keep track of your followers?
 Then this is the app for you!
